@@ -10,4 +10,6 @@ Using the MATLAB script for the 2-D FDM (Finite Difference Method) discretizatio
 A Laplacian bowl-the same Dirchlet BC for all the edges!\
 ![plot!](https://github.com/RSuryaNarayan/CFD_MEPE11/blob/main/Results/laplace_bowl.PNG)\
 A Laplacian chair-all different Dirchlet BCs for the 4 edges\
-![plot!](https://github.com/RSuryaNarayan/CFD_MEPE11/blob/main/Results/laplace_chair.PNG)
+![plot!](https://github.com/RSuryaNarayan/CFD_MEPE11/blob/main/Results/laplace_chair.PNG)!
+# Unsteady diffusion: finite difference
+![plot!](https://github.com/RSuryaNarayan/CFD_MEPE11/blob/main/Results/Unsteady%20diffusion.PNG)
