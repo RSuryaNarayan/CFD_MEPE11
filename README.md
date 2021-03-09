@@ -13,3 +13,5 @@ A Laplacian chair-all different Dirchlet BCs for the 4 edges\
 ![plot!](https://github.com/RSuryaNarayan/CFD_MEPE11/blob/main/Results/laplace_chair.PNG)!
 # Unsteady diffusion: finite difference
 ![plot!](https://github.com/RSuryaNarayan/CFD_MEPE11/blob/main/Results/Unsteady%20diffusion.PNG)
+# TDMA (Tridiagonal Matrix Algorithm) of heat-conduction
+![plot!](https://github.com/RSuryaNarayan/CFD_MEPE11/blob/main/Results/TDMA.png)
