@@ -57,8 +57,8 @@ int main()
         print_mat(T_fine,9,1);
 	//coarse
         print_mat(T_coarse,5,0);
-	//the smoothening step - do 3 rounds of Gauss-siedel iterations 
-	gauss_siedel(T_fine,5,9,1);
+	//the smoothening step - do 10 rounds of Gauss-siedel iterations 
+	gauss_siedel(T_fine,10,9,1);
 	cout<<"\nAfter 5 iterations of Gauss-Siedel..\n";
 	print_mat(T_fine,9,1);
 	//compute residual on the fine level
@@ -98,7 +98,7 @@ int main()
 		}
 	}
 	//gauss-siedel
-	int iter_error=40;
+	int iter_error=20;
 	for (int k=0;k<iter_error;++k)
 	{
 		for (int i=1; i<=3; ++i)
@@ -140,11 +140,22 @@ int main()
 	}
 	print_mat(T_fine,9,1);
 	//another smoothening step
-	gauss_siedel(T_fine,5,9,1);
-	cout<<"\nAfter 5 iterations of Gauss-Siedel (Finalized) ..\n";
+	gauss_siedel(T_fine,10,9,1);
+	cout<<"\nAfter 10 iterations of Gauss-Siedel (Finalized) ..\n";
 	print_mat(T_fine,9,1);
 	//compare with the true solution
 	cout<<"TRUE SOLUTION::\n";
 	gauss_siedel(T_true,100,9,1);
 	print_mat(T_true,9,1);
+	//compute the %error
+	float perc[9][9];
+	for (int i=0; i<=8; ++i)
+	{
+		for (int j=0; j<=8; ++j)
+		{
+			perc[i][j]=100*(T_true[i][j]-T_fine[i][j])/T_true[i][j];
+		}
+	}
+	cout<<"\npercentage errors::\n";
+	print_mat(perc,9,1);
 }
