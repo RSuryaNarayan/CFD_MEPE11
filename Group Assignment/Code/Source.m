@@ -11,6 +11,14 @@ for k=1:100
     end
     t(1)=t(2);
 end
+% alternative numerical formulation: 
+for k=1:100
+    t_old=t;
+    for i=2:mesh-1
+        t(i) = (t_old(i+1) + t_old(i-1) - (w2*dx^2)*t_old(i))/(2 + t_old(i)*w1*dx^2);
+    end
+    t(1)=t(2);
+end
 x=linspace(0,1,mesh);
 plot(x,t,'*r');hold on;%put analytical here
 plot(x,t,'-g');hold off;
