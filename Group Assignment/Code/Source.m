@@ -20,5 +20,8 @@ for k=1:100
     t(1)=t(2);
 end
 x=linspace(0,1,mesh);
-plot(x,t,'*r');hold on;%put analytical here
-plot(x,t,'-g');hold off;
+plot(x,t,'-r');hold on;%put analytical here
+legend('variable split linear')
+plot(x,t_1,'-g');
+legend('variable split linear', 'fully non-linear')
+hold off;
