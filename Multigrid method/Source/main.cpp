@@ -59,7 +59,7 @@ int main()
         print_mat(T_coarse,5,0);
 	//the smoothening step - do 10 rounds of Gauss-siedel iterations 
 	gauss_siedel(T_fine,10,9,1);
-	cout<<"\nAfter 5 iterations of Gauss-Siedel..\n";
+	cout<<"\nAfter 10 iterations of Gauss-Siedel..\n";
 	print_mat(T_fine,9,1);
 	//compute residual on the fine level
 	for (int i=0;i<=8;++i)
