@@ -1,6 +1,6 @@
 # CFD-Group 10: Assignment: Solution to a porous fin 
 Find the updates and changes in codes here. Stuff to do: \
-~1. Explore finite volume method~ \
+~1. Explore finite volume method~ <span style="color:blue">DONE</span> \
 2. Derive conditions of stability and explain dependance on grid resolution \
 3. Add analytical solution comparison to the code\
 4. Derive other plot-vars\
