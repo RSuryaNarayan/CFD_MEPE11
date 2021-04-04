@@ -1,6 +1,6 @@
 # CFD-Group 10: Assignment: Solution to a porous fin 
 Find the updates and changes in codes here. Stuff to do: \
-~1. Explore finite volume method~ <span style="color:blue">DONE</span> \
+~1. Explore finite volume method~  \
 ~2. Derive conditions of stability and explain dependance on grid resolution~ \
 3. Add analytical solution comparison to the code\
 ~4. Derive other plot-vars~\
@@ -8,8 +8,4 @@ Find the updates and changes in codes here. Stuff to do: \
 ![plot!](https://github.com/RSuryaNarayan/CFD_MEPE11/blob/main/Group%20Assignment/Results/final_compare.png) \
 I finally tested it for many test cases changing the Darcy factor *Da* and parameter *xi*  \
 ![plot!](https://github.com/RSuryaNarayan/CFD_MEPE11/blob/main/Group%20Assignment/Results/multi_plot_compare.jpeg)\
-I also changed the parameter *Nu* from 10 to 20 and here are the results
-
-![plot!](https://github.com/RSuryaNarayan/CFD_MEPE11/blob/main/Group%20Assignment/Results/Nusselt_number_variation.png)
-
-<p>For any other updates/suggestions ping me over Whatsapp/Group chat. To make changes to the code, issue a pull request in this repository. </p>
+Refer to [Usage.md](https://github.com/RSuryaNarayan/CFD_MEPE11/blob/main/Group%20Assignment/Usage.md) for instructions on using the code
