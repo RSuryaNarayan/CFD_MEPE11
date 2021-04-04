@@ -1,0 +1,2 @@
+# Usage of the solver
+The solver can be downloaded from this repo using the ```git clone``` command or by directly just clicking on ```download files``` option. Once it downloads the files extract all files to a single folder and remove the ```Code/Source/FVM``` directory after you move them to a single folder. All you have to to next is to run the solver using MATLAB by hitting run (after setting up the suitable parameters of course!) 
