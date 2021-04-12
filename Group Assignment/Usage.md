@@ -27,6 +27,11 @@ For FVM:
 [t,x] = Finite_Volume_method(params, mesh, tol);
 plot(x,t,'+r') %choose the plot style using the third argument
 ```
+For analytical solution:
+```
+[t,x] = analytical_solution(params,mesh);
+plot(x,t);
+```
 Once the solution for the non-dimensionalized temperature is computed you can now compute the performance parameters of the fin using the ```performance_eval``` function as follows: 
 ```
 perf = performance_eval(params,t_1);
