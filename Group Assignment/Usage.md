@@ -9,8 +9,9 @@ This project follows any other organization a software generally has:
 3. ```Non_liniear_FDM.m```-a function that returns the solution to the governing ODE using non-linear FDM 
 4. ```Linearized_FDM.m```- a function that returns the solution to the governing ODE using linearized FDM
 5. ```Finite_Volume_Method.m```- a function to compute the solution using FVM
+6. ```analytical_solution.m```- a function that returns the true solution at the specified mesh points.
 
-Further files in ```Source/FVM``` are dependencies for computing the finite volume solution using linearized source terms (Picard's method). Let's see how one can use the code now 
+Further files in ```Source/FVM``` are dependencies for computing the finite volume solution using linearized source terms (Picard's method). The analytical solution is obtained via adomain decomposition method as a polynomial and these dependencies can be found in ```Source/Analytical/```. Let's see how one can use the code now 
 # Running a method 
 Running a given method using this solver is pretty simple. Any solver in the code, be it FDM or FVM returns a (nx2) matrix with the first column for the non-dimensional temperature (theta) and the second column for non-dimensionalized x. Also all of these ubitquitously require only 3 inputs: ```params``` containing the parameters that define the problem in the same order as specified in the ```main.m``` file, ```mesh``` denotes the size of the mesh (for FVM it will produce a total of (n-1) cells so choose accordingly) and finally the tolerance ```tol``` for the linear-solver. A recommended, safe and acceptable tolerance is 1e-9. You may try smaller and tighter ones, but you are bound to run into infinite loops after 1e-16. So the command for running the non-linear FDM and immediately plot the solution is as follows:
 ```
