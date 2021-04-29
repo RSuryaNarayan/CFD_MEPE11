@@ -1,0 +1,8 @@
+/* Created by mdot for Matlab */
+digraph m2html {
+
+  P1 [URL="P1.html"];
+  P2 [URL="P2.html"];
+  P3 [URL="P3.html"];
+  P4 [URL="P4.html"];
+}
