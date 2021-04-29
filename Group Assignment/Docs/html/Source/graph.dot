@@ -1,0 +1,15 @@
+/* Created by mdot for Matlab */
+digraph m2html {
+  Linearized_FDM -> compute_w;
+  Non_linear_FDM -> compute_w;
+  main -> Linearized_FDM;
+  main -> Non_linear_FDM;
+  main -> compute_w;
+  main -> performance_eval;
+
+  Linearized_FDM [URL="Linearized_FDM.html"];
+  Non_linear_FDM [URL="Non_linear_FDM.html"];
+  compute_w [URL="compute_w.html"];
+  main [URL="main.html"];
+  performance_eval [URL="performance_eval.html"];
+}
