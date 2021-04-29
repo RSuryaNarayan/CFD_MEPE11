@@ -1,0 +1,50 @@
+/* Created by mdot for Matlab */
+digraph m2html {
+  adomain_decomposed -> P1;
+  adomain_decomposed -> P2;
+  adomain_decomposed -> P3;
+  adomain_decomposed -> P4;
+  analytical_solution -> adomain_decomposed;
+  analytical_solution -> compute_th_0;
+  analytical_solution -> compute_w;
+  compute_th_0 -> P1;
+  compute_th_0 -> P2;
+  compute_th_0 -> P3;
+  compute_th_0 -> P4;
+  Finite_Volume_Method -> Sc;
+  Finite_Volume_Method -> dSdt;
+  Finite_Volume_Method -> update;
+  Finite_Volume_Method -> update_cell_1;
+  Finite_Volume_Method -> update_end;
+  Finite_Volume_Method -> compute_w;
+  Sc -> S;
+  Sc -> dSdt;
+  Linearized_FDM -> compute_w;
+  Non_linear_FDM -> compute_w;
+  main -> analytical_solution;
+  main -> Finite_Volume_Method;
+  main -> Linearized_FDM;
+  main -> Non_linear_FDM;
+  main -> compute_w;
+  main -> performance_eval;
+
+  P1 [URL="Source/Analytical/Polynomials/P1.html"];
+  P2 [URL="Source/Analytical/Polynomials/P2.html"];
+  P3 [URL="Source/Analytical/Polynomials/P3.html"];
+  P4 [URL="Source/Analytical/Polynomials/P4.html"];
+  adomain_decomposed [URL="Source/Analytical/adomain_decomposed.html"];
+  analytical_solution [URL="Source/Analytical/analytical_solution.html"];
+  compute_th_0 [URL="Source/Analytical/compute_th_0.html"];
+  Finite_Volume_Method [URL="Source/FVM/Finite_Volume_Method.html"];
+  S [URL="Source/FVM/S.html"];
+  Sc [URL="Source/FVM/Sc.html"];
+  dSdt [URL="Source/FVM/dSdt.html"];
+  update [URL="Source/FVM/update.html"];
+  update_cell_1 [URL="Source/FVM/update_cell_1.html"];
+  update_end [URL="Source/FVM/update_end.html"];
+  Linearized_FDM [URL="Source/Linearized_FDM.html"];
+  Non_linear_FDM [URL="Source/Non_linear_FDM.html"];
+  compute_w [URL="Source/compute_w.html"];
+  main [URL="Source/main.html"];
+  performance_eval [URL="Source/performance_eval.html"];
+}
