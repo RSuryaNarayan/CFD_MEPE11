@@ -28,6 +28,15 @@ For FVM:
 [t,x] = Finite_Volume_method(params, mesh, tol);
 plot(x,t,'+r') %choose the plot style using the third argument
 ```
+Since the Finite Volume Method's grid doesn't coincide with the FDM grid, you might want to interpolate to compare both of them:
+```
+t_corr=zeros(1,mesh);t_corr(mesh)=1;
+t_corr(1)=t(1);
+for i=2:mesh-1
+    t_corr(i)=0.5*(t(i)+t(i+1));
+end
+err = 100*abs(t_1-t_corr)./t_corr;
+```
 For analytical solution:
 ```
 [t,x] = analytical_solution(params,mesh);
